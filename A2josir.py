@@ -1,11 +1,5 @@
 import streamlit as st
-import pandas
-# Dados simulados - Você pode substituir esses dados com a resposta da API do YouTube
-
-   
-
-
-
+import pandas as pd
 
 # Página 1: Perguntas sobre hábitos de assistir podcasts
 st.title("Amantes de Podcast")
@@ -31,7 +25,3 @@ if "page" in st.experimental_get_query_params():
         df = pd.read_csv(nome_arquivo)
         st.header(f"Top 10 canais de podcast no YouTube brasileiro sobre {nicho}")
         st.write(df)
-
-
-
-
