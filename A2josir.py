@@ -14,7 +14,7 @@ assiste_podcast = st.radio("Você costuma assistir podcast?", ("Sim, amo!", "Nã
 frequencia = st.selectbox("Com qual frequência você assiste?", ["Diariamente", "Semanalmente", "Mensalmente", "Raramente", "Nunca"])
 canais_diferentes = st.radio("Você costuma assistir canais diferentes?", ("Sim", "Não, gosto de assistir o mesmo sempre "))
 
-if assiste_podcast == "Sim":
+if assiste_podcast == "Sim, amo!":
     st.header("Se sim, que bom! Vou te mostrar outros para você experimentar. Se você só assiste os mesmo, essa é uma ótima oportunidade para conhecer novos canais. Vamos la? ")
     ansioso = st.selectbox("sim, vamos la", ("claro, estou ansioso (a)",))
     st.experimental_set_query_params(page=2)  # Altera para a página 2 após responder as perguntas
