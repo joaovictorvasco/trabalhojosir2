@@ -32,7 +32,6 @@ if "page" in st.experimental_get_query_params():
         st.header(f"Top 10 canais de podcast no YouTube brasileiro sobre {nicho}")
         st.write(df)
 
-else:
-   st.write("Parece que você não assiste podcasts. Talvez você possa começar a assistir alguns dos nossos recomendados!")
+
 
 
