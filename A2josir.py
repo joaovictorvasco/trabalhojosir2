@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+st.sidebar.title (Já conhece o nosso site?")
 # Página 1: Perguntas sobre hábitos de assistir podcasts
 st.title("Amantes de Podcast")
 st.header("Vamos conhecer seus hábitos de assistir podcasts!")
