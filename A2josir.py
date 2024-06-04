@@ -27,5 +27,5 @@ if assiste_podcast == "Sim":
    
 else:
    st.write("Parece que você não assiste podcasts. Talvez você possa começar a assistir alguns dos nossos recomendados!")
-```
+
 
