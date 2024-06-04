@@ -19,7 +19,7 @@ else:
 if "page" in st.experimental_get_query_params():
     if st.experimental_get_query_params()["page"] == ["2"]:
         st.header("Qual nicho de podcast você gosta de assistir?")
-        nicho = st.selectbox("Escolha um nicho", ["Conversa", "React", "Politica", "Empreendedorismo", "Paranormal", "Esporte", "Games", "Especialistas", "Tecnologia"])
+        nicho = st.selectbox("Escolha um nicho", ["Conversas", "React", "Politica", "Empreendedorismo", "Paranormal", "Esporte", "Jogos", "Especialistas", "Tecnologia"])
         nome_arquivo = "podcast_" +  nicho.lower() + ".csv"
         # Mostrar os 10 melhores canais de podcast no nicho escolhido
         df = pd.read_csv(nome_arquivo)
