@@ -15,6 +15,7 @@ st.header("Se sim, que bom! Vou te mostrar outros para você experimentar. Se vo
 ansioso = st.selectbox("sim, vamos la", ("claro, estou ansioso (a)"))
  
 # Página 2: Perguntar sobre o nicho de interesse
+
 if assiste_podcast == "Sim":
    st.header("Qual nicho de podcast você gosta de assistir?")
    nicho = st.selectbox("Escolha um nicho", ["Conversa", "React", "Politica", "Empreendedorismo", "Paranormal", "Esporte", "Games", "Especialistas", "Tecnologia"])
