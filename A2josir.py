@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.sidebar.title (Já conhece o nosso site?")
-st.sidebar.info("""Nosso site é para os amantes de podcast que estão em busca de novos canais. Aqui você pode escolher a categoria que você gosta e descobrir novas experiências. Aproveite!""")
+st.sidebar.info ("""Nosso site é para os amantes de podcast que estão em busca de novos canais. Aqui você pode escolher a categoria que você gosta e descobrir novas experiências. Aproveite!""")
 # Página 1: Perguntas sobre hábitos de assistir podcasts
 st.title("Amantes de Podcast")
 st.header("Vamos conhecer seus hábitos de assistir podcasts!")
