@@ -14,7 +14,7 @@ canais_diferentes = st.radio("Você costuma assistir canais diferentes?", ("Sim"
 if assiste_podcast == "Sim, amo!":
     st.header("Se sim, que bom! Vou te mostrar outros para você experimentar. Se você só assiste os mesmo, essa é uma ótima oportunidade para conhecer novos canais. Vamos la? ")
     ansioso = st.selectbox("sim, vamos la", ("claro, estou ansioso (a)"))
-    st.experimental_set_query_params(page=2)  # Altera para a página 2 após responder as perguntas
+    st.experimental_set_query_params(page=2)   # Altera para a página 2 após responder as perguntas
 else:
     st.write("Parece que você não assiste podcasts. Talvez você possa começar a assistir alguns dos nossos recomendados!")
 
@@ -28,3 +28,6 @@ if "page" in st.experimental_get_query_params():
         df = pd.read_csv(nome_arquivo)
         st.header(f"Top 10 canais de podcast no YouTube brasileiro sobre {nicho}")
         st.write(df)
+        # Adiciona a imagem no topo da primeira página
+st.image("https://tecnoblog.net/noticias/youtube-teste-problema-desmonetizacao/", use_column_width=True)
+
