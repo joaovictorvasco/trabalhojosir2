@@ -33,4 +33,4 @@ if st.session_state.page == 2:
     nome_arquivo = "podcast_" + nicho.lower() + ".csv"
     # Mostrar os 10 melhores canais de podcast no nicho escolhido
     df = pd.read_csv(nome_arquivo)
-    st.header(f"Top 10 canais de
+    st.header(f"Top 10 canais de podcast no YouTube brasileiro sobre {nicho}")
