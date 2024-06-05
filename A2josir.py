@@ -5,7 +5,7 @@ from PIL import Image
 st.sidebar.title ("Já conhece o nosso site?")
 st.sidebar.info ("Nosso site é para os amantes de podcast que estão em busca de novos canais. Aqui você pode escolher a categoria que você gosta e descobrir novas experiências. Aproveite!")
 
-foto = Image.open('Foto site.JPG') 
+foto = Image.open('Foto site .JPG') 
 st.image(foto, width= 500)
 
 # Página 1: Perguntas sobre hábitos de assistir podcasts
