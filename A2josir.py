@@ -5,11 +5,10 @@ from PIL import Image
 st.sidebar.title ("Já conhece o nosso site?")
 st.sidebar.info ("Nosso site é para os amantes de podcast que estão em busca de novos canais. Aqui você pode escolher a categoria que você gosta e descobrir novas experiências. Aproveite!")
 
-foto = Image.open('Foto site .JPG') 
-st.image(foto, width= 500)
-
 # Página 1: Perguntas sobre hábitos de assistir podcasts
 st.title("Amantes de Podcast")
+foto = Image.open('Foto site .JPG') 
+st.image(foto, width= 500)
 st.header("Vamos conhecer seus hábitos de assistir podcasts!")
 assiste_podcast = st.radio("Você costuma assistir podcast?", ("Sim, amo!", "Não"))
 frequencia = st.selectbox("Com qual frequência você assiste?", ["Diariamente", "Semanalmente", "Mensalmente", "Raramente", "Nunca"])
