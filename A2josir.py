@@ -35,7 +35,3 @@ if st.session_state.page == 2:
     st.write(df)
     # Adiciona a imagem no topo da primeira página
     st.image("https://tecnoblog.net/noticias/youtube-teste-problema-desmonetizacao/", use_column_width=True)
-
-
-
-
