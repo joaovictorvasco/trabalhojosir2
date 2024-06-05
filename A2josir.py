@@ -4,7 +4,7 @@ import pandas as pd
 st.sidebar.title ("Já conhece o nosso site?")
 st.sidebar.info ("Nosso site é para os amantes de podcast que estão em busca de novos canais. Aqui você pode escolher a categoria que você gosta e descobrir novas experiências. Aproveite!")
 
-foto = Image.open('camz.jpg') 
+foto = Image.open('Foto site.JPG') 
 st.image(foto, caption="Foto site.JPG", width= 500)
 
 # Página 1: Perguntas sobre hábitos de assistir podcasts
