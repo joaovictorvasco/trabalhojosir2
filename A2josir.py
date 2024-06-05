@@ -6,7 +6,6 @@ st.sidebar.title("Já conhece o nosso site?")
 st.sidebar.info("Nosso site é para os amantes de podcast que estão em busca de novos canais. Aqui você pode escolher a categoria que você gosta e descobrir novas experiências. Aproveite!")
 
 # Página 1: Perguntas sobre hábitos de assistir podcasts
-def pagina_inicial():
     st.title("Amantes de Podcast")
     foto = Image.open('Foto site .JPG')
     st.image(foto, width=500)
@@ -23,7 +22,6 @@ def pagina_inicial():
         st.write("Parece que você não assiste podcasts. Talvez você possa começar a assistir alguns dos nossos recomendados!")
 
 # Página 2: Perguntar sobre o nicho de interesse
-def pagina_inicial():
     if "page" in st.experimental_get_query_params():
         if st.experimental_get_query_params()["page"] == ["2"]:
             st.header("Qual nicho de podcast você gosta de assistir?")
@@ -37,15 +35,3 @@ def pagina_inicial():
             st.image("https://tecnoblog.net/noticias/youtube-teste-problema-desmonetizacao/", use_column_width=True)
     
 
-def main():
-    # Adicione um menu de navegação para alternar entre as páginas
-    pagina = st.sidebar.selectbox('Navegar', ('Página Inicial', 'Página Secundária'))
- 
-    # Renderize a página correspondente com base na seleção do menu
-    if pagina == 'Página Inicial':
-        pagina_inicial()
-    elif pagina == 'Página Secundária':
-        pagina_secundaria()
- 
-if __name__ == '__main__':
-    main()
