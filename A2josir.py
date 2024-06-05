@@ -18,11 +18,7 @@ if assiste_podcast == "Sim, amo!":
     st.header("Se sim, que bom! Vou te mostrar outros para você experimentar. Se você só assiste os mesmo, essa é uma ótima oportunidade para conhecer novos canais.")
     if st.button("Next"):  # Verifica se o botão "Next" foi pressionado
         st.experimental_set_query_params(page=2)  # Altera para a página 2 após responder as perguntas
-else:
-    st.write("Parece que você não assiste podcasts. Talvez você possa começar a assistir alguns dos nossos recomendados!")
-
-# Página 2: Perguntar sobre o nicho de interesse
-if st.experimental_get_query_params().get("page") == "2":
+        if st.experimental_get_query_params().get("page") == "2":
     st.header("Qual nicho de podcast você gosta de assistir?")
         st.header("Qual nicho de podcast você gosta de assistir?")
         nicho = st.selectbox("Escolha um nicho", ["Conversas", "React", "Politica", "Empreendedorismo", "Paranormal", "Esporte", "Jogos", "Especialistas", "Tecnologia"])
@@ -33,6 +29,9 @@ if st.experimental_get_query_params().get("page") == "2":
         st.write(df)
         # Adiciona a imagem no topo da primeira página
         st.image("https://tecnoblog.net/noticias/youtube-teste-problema-desmonetizacao/", use_column_width=True)
+else:
+    st.write("Parece que você não assiste podcasts. Talvez você possa começar a assistir alguns dos nossos recomendados!")
+
 
 
 
