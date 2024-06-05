@@ -21,7 +21,7 @@ with st.form('form'):
         st.experimental_set_query_params(page=2)   # Altera para a página 2 após responder as perguntas
     else:
         st.write("Parece que você não assiste podcasts. Talvez você possa começar a assistir alguns dos nossos recomendados!")
-        botao = st.from_submit_button('next') 
+    botao = st.from_submit_button('next') 
         
 
 # Página 2: Perguntar sobre o nicho de interesse
