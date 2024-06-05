@@ -35,3 +35,17 @@ if "page" in st.experimental_get_query_params():
         st.write(df)
         # Adiciona a imagem no topo da primeira página
         st.image("https://tecnoblog.net/noticias/youtube-teste-problema-desmonetizacao/", use_column_width=True)
+
+
+def main():
+    # Adicione um menu de navegação para alternar entre as páginas
+    pagina = st.sidebar.selectbox('Navegar', ('Página Inicial', 'Página Secundária'))
+ 
+    # Renderize a página correspondente com base na seleção do menu
+    if pagina == 'Página Inicial':
+        pagina_inicial()
+    elif pagina == 'Página Secundária':
+        pagina_secundaria()
+ 
+if __name__ == '__main__':
+    main()
