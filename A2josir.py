@@ -20,8 +20,10 @@ if st.session_state.page == 1:
 
     if assiste_podcast == "Sim, amo!":
         st.header("Se sim, que bom! Vou te mostrar outros para você experimentar. Se você só assiste os mesmos, essa é uma ótima oportunidade para conhecer novos canais.")
-        if st.button("Next"):  # Verifica se o botão "Next" foi pressionado
-            st.session_state.page = 2
+
+# Verifica se o botão "Next" foi pressionado
+if st.session_state.page == 1 and st.button("Next"):
+    st.session_state.page = 2
 
 # Página 2: Perguntar sobre o nicho de interesse
 if st.session_state.page == 2:
@@ -31,7 +33,4 @@ if st.session_state.page == 2:
     nome_arquivo = "podcast_" + nicho.lower() + ".csv"
     # Mostrar os 10 melhores canais de podcast no nicho escolhido
     df = pd.read_csv(nome_arquivo)
-    st.header(f"Top 10 canais de podcast no YouTube brasileiro sobre {nicho}")
-    st.write(df)
-    # Adiciona a imagem no topo da primeira página
-    st.image("https://tecnoblog.net/noticias/youtube-teste-problema-desmonetizacao/", use_column_width=True)
+    st.header(f"Top 10 canais de
