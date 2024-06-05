@@ -20,6 +20,7 @@ else:
     botao = st.from_submit_button('next') 
 
 # Página 2: Perguntar sobre o nicho de interesse
+if botao:
 if "page" in st.experimental_get_query_params():
     if st.experimental_get_query_params()["page"] == ["2"]:
         st.header("Qual nicho de podcast você gosta de assistir?")
