@@ -17,7 +17,7 @@ canais_diferentes = st.radio("Você costuma assistir canais diferentes?", ("Sim"
 if assiste_podcast == "Sim, amo!":
     st.header("Se sim, que bom! Vou te mostrar outros para você experimentar. Se você só assiste os mesmo, essa é uma ótima oportunidade para conhecer novos canais.")
     if st.button("Next"):  # Verifica se o botão "Next" foi pressionado
-        st.experimental_set_query_params(page=2)  # Altera para a página 2 após responder as perguntas
+    st.experimental_set_query_params(page=2)  # Altera para a página 2 após responder as perguntas
         if st.experimental_get_query_params().get("page") == "2":
             st.header("Qual nicho de podcast você gosta de assistir?")
             st.header("Qual nicho de podcast você gosta de assistir?")
