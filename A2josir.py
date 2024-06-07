@@ -27,7 +27,7 @@ if page == 2:
     st.title("Nicho de Podcast")
     st.header("Qual nicho de podcast você gosta de assistir?")
     nicho = st.selectbox("Escolha um nicho", ["Conversas", "React", "Politica", "Empreendedorismo", "Paranormal", "Esporte", "Jogos", "Especialistas", "Tecnologia"])
-    nome_arquivo = "podcast_" + nicho.lower() + ".xlsx"
+    nome_arquivo = "podcast_conversas.xlsx"
     # Mostrar os 10 melhores canais de podcast no nicho escolhido
     df = pd.read_excel(nome_arquivo)
     st.header(f"Top 10 canais de podcast no YouTube brasileiro sobre {nicho}")
