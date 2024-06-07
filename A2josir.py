@@ -32,5 +32,3 @@ if page == 2:
     df = pd.read_csv(nome_arquivo)
     st.header(f"Top 10 canais de podcast no YouTube brasileiro sobre {nicho}")
     st.write(df.head(10))
-    # Adiciona a imagem no topo da primeira página
-    st.image("https://tecnoblog.net/noticias/youtube-teste-problema-desmonetizacao/", use_column_width=True)
